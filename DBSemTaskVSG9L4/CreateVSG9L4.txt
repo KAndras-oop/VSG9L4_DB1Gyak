@@ -1,0 +1,36 @@
+CREATE TABLE ISKOLA(
+IskolaID INT VARCHAR Primery key,
+Nev VARCHAR(50) Primary key,
+Telefonszam INT(11),
+Irsz INT(4),
+Cim VARCHAR(30),
+Hazszam varchar(20)
+);
+
+CREATE TABLE Diak (
+DiakID int PRIMARY KEY NOT NULL,
+Nev VARCHAR(30),
+Szuletesiev INT(4),
+Kor INT(2)
+);
+
+CREATE TABLE Targy (
+TargyID INT(4) PRIMARY KEY NOT NULL,
+Targyneve VARCHAR(30),
+Teljesitesfeltetele VARCHAR(30),
+Oraszam INT
+);
+
+CREATE TABLE Tanar (
+TanarID int PRIMARY KEY NOT NULL,
+Nev VARCHAR(30),
+Szuletesiev INT(4),
+Kor INT(2)
+);
+
+CREATE TABLE Terem (
+TeremID INT PRIMARY KEY NOT NULL,
+Orakezd INT,
+Oravege INT,
+Ferohely INT
+);
